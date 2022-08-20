@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        padding: 1.5rem 0;
+
+        img {
+            max-width: 80px;
+            object-fit: contain;
+        }
+
+        nav {
+
+            ul {
+                display: flex;
+                gap: 1.5rem;
+
+                li {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 1px;
+                        background-color: $c_txt_section_links;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: width 0.2s ease-in-out;
+                    }
+
+                    a {
+                        color: $c_txt_nav;
+                        font-size: 0.75rem;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

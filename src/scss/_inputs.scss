@@ -1,0 +1,20 @@
+input {
+    padding: 0.7rem 0;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+
+    &[type="email"] {
+        padding-left: 1rem;
+        color: $c_txt_dark;
+        border-color: rgba($c_txt_dark, 0.75);
+    }
+
+    &[type="submit"] {
+        background-color: $c_bg_button;
+        color: $c_txt_light;
+        font-weight: 700;
+        border-color: $c_bg_button;
+        box-shadow: 0 3px 10px 0 hsla(0, 0%, 0%, 0.2);
+    }
+}

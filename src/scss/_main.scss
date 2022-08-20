@@ -1,0 +1,170 @@
+main {
+    
+    .section {
+        display: flex;
+        justify-content: center;
+
+        .container {
+            flex-direction: column;
+            gap: 2.5rem;
+
+            .section-picture {
+                width: 96%;
+                max-width: 640px;
+                aspect-ratio: 11 / 8;
+                background-size: contain;
+            }
+
+            #illustration1 {
+                background-image: url(../img/illustration-1.svg);
+            }
+
+            #illustration2 {
+                background-image: url(../img/illustration-2.svg);
+            }
+        }
+
+        .description-wrapper {
+            
+            p {
+                margin-bottom: 2rem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                margin: 0 0.5rem;
+            }
+        }
+
+        a {
+            color: $c_txt_section_links;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid $c_txt_section_links;
+            width: fit-content;
+            font-size: 0.8rem;
+            margin: 2.5rem auto;
+        }
+
+        &:nth-child(1) {
+            padding: 5rem 0 9rem;
+            background-image: url(../img/bg-curve-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+
+        &:nth-child(2) {
+            padding: 2rem 0 5.5rem;
+            background-color: $c_bg_section;
+
+            .section-picture {
+                margin-bottom: 3rem;
+            }
+
+            p {
+                text-align: left;
+                margin-bottom: 1rem;
+                font-size: 0.87rem;
+                color: rgba($c_txt_dark, 0.8);
+                line-height: 1.3rem;
+            }
+        }
+
+        .testimonial-card {
+            width: 87.5%;
+            max-width: 360px;
+            margin: 0 auto;
+            background-color: $c_bg_testimonial_card;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1);
+            padding: 1.3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 0.6rem;
+                line-height: 1.1rem;
+                font-weight: 700;
+                color: rgba($c_txt_dark, 0.7);
+            }
+
+            .profile-container {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                img {
+                    border-radius: 50%;
+                    width: 1.5rem;
+                    aspect-ratio: 1 / 1;
+                    margin: 0;
+                }
+
+                .details-wrapper {
+
+                    .t-name, .t-role {
+                        margin: 0;
+                        line-height: 0.8rem;
+                    }
+
+                    .t-name {
+                        color: $c_txt_dark;
+                    }
+
+                    .t-role {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: $c_bg_calltoaction;
+            color: $c_txt_light;
+            padding: 3rem 0 4rem;
+
+            .container {
+                width: 80%;
+                gap: 1.5rem;
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    opacity: 0.8;
+                    margin: 0;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    gap: 0.5rem;
+
+                    input {
+
+                        &[type="email"] {
+                            padding-left: 0.5rem;
+                            font-size: 0.6rem;
+                        }
+
+                        &[type="submit"] {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
