@@ -8,6 +8,14 @@ input {
         padding-left: 1rem;
         color: $c_txt_dark;
         border-color: rgba($c_txt_dark, 0.75);
+
+        &:focus {
+            outline: none;
+        }
+
+        &:invalid {
+            border: 1px solid $c_input_invalid;
+        }
     }
 
     &[type="submit"] {
@@ -16,5 +24,11 @@ input {
         font-weight: 700;
         border-color: $c_bg_button;
         box-shadow: 0 3px 10px 0 hsla(0, 0%, 0%, 0.2);
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: lighten($c_bg_button, 10%);
+        }
     }
 }

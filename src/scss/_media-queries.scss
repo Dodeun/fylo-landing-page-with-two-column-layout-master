@@ -1,0 +1,196 @@
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 1280px;
+    }
+
+    /* TEXT */
+    
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        line-height: 3.8rem;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.15rem;
+    }
+
+    /* INPUTS */
+
+    input {
+    
+        &[type="email"] {
+            width: 100%;
+            max-width: 320px;
+        }
+    
+        &[type="submit"] {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+
+    /* HEADER */
+
+    header {
+    
+        .container {
+            padding: 4rem 0 0;
+    
+            img {
+                max-width: 160px;
+            }
+    
+            nav {
+    
+                ul {
+                    display: flex;
+                    gap: 3rem;
+    
+                    li {
+    
+                        a {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* MAIN */
+
+    main {
+
+        .section {
+
+            .container {
+                flex-direction: row-reverse;
+                text-align: left;
+            }
+
+            .description-wrapper {
+                max-width: 600px;
+
+                p {
+                    margin-bottom: 1.5rem;
+                }
+
+                form {
+                    flex-direction: row;
+                    margin: 0;
+                }
+            }
+
+            &:nth-child(1) {
+                padding: 4.5rem 0 9rem;
+                background-image: url(../img/bg-curve-desktop.svg);
+            }
+
+            &:nth-child(2) {
+                padding-bottom: 6.3rem;
+
+                .description-wrapper {
+                    p {
+                        font-size: 0.9rem;
+                        max-width: 500px;
+                        margin-bottom: 1.2rem;
+                    }
+                }
+            }
+
+            a {
+                margin: 1.5rem 0 2.5rem;
+                font-size: 0.9rem;
+            }
+
+            .testimonial-card {
+                margin: 0;
+                padding: 1.8em 2rem;
+
+                p {
+                    line-height: 1.4rem;
+                }
+
+                .profile-container {
+
+                    img {
+                        width: 2rem;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                padding: 6.5rem 0 5em;
+
+                .container {
+                    flex-direction: row;
+                    width: calc(100% - 50px);
+
+                    .description-wrapper {
+                        width: 60%;
+
+                        h2 {
+                            font-size: 2rem;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        p {
+                            max-width: 600px;
+                        }
+                    }
+
+                    form {
+                        width: 40%;
+                        gap: 1rem;
+    
+                        input {
+                            padding: 1rem 0;
+    
+                            &[type="email"] {
+                                padding-left: 1.5em;
+                                font-size: 0.8rem;
+                                max-width: 480px;
+                            }
+    
+                            &[type="submit"] {
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+
+        .container {
+            padding: 4.5rem 0 3rem;
+
+            .links-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                & > * {
+                    flex: 1;
+                }
+
+                .internal-links {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+}
